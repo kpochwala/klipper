@@ -8,7 +8,7 @@ setuptools.setup(
     version="0.9.0",
     author="KevinOConnor",
     description = 'Klipper 3D Printing Firmware',
-    packages=find_packages(),
+    packages=setuptools.find_packages(),
     entry_points = { "console_scripts": [ "klippy = klippy.klippy:main" ] },
     url = "https://www.klipper3d.org/",
     python_requires='>=3.5',
