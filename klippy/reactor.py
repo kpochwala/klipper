@@ -7,7 +7,7 @@ import os, gc, select, math, time, logging
 import greenlet
 from klippy import util
 from klippy import chelper
-import chelper.Queue as queue
+import queue
 
 _NOW = 0.
 _NEVER = 9999999999999999.

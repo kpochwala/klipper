@@ -4,7 +4,7 @@
 #
 # This file may be distributed under the terms of the GNU GPLv3 license
 import logging, socket, os, sys, errno, json
-import gcode
+from klippy import gcode
 
 # Json decodes strings as unicode types in Python 2.x.  This doesn't
 # play well with some parts of Klipper (particuarly displays), so we

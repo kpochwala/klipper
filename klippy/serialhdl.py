@@ -6,7 +6,7 @@
 import logging, threading, os
 import serial
 
-import msgproto, chelper, util
+from klippy import msgproto, chelper, util
 
 class error(Exception):
     pass

@@ -26,7 +26,7 @@ setuptools.setup(
     description = 'Klipper 3D Printing Firmware',
     packages=setuptools.find_packages(),
     ext_modules = [ c_helper ],
-    install_requires = [ "greenlet", "cffi" ],
+    install_requires = [ "greenlet", "cffi", "serial" ],
     entry_points = { "console_scripts": [ "klippy = klippy.klippy:main" ] },
     url = "https://www.klipper3d.org/",
     python_requires='>=3.5',
