@@ -3,9 +3,11 @@
 # Copyright (C) 2016-2020  Kevin O'Connor <kevin@koconnor.net>
 #
 # This file may be distributed under the terms of the GNU GPLv3 license.
-import os, gc, select, math, time, logging, Queue as queue
+import os, gc, select, math, time, logging
 import greenlet
-import chelper, util
+from klippy import util
+from klippy import chelper
+import chelper.Queue as queue
 
 _NOW = 0.
 _NEVER = 9999999999999999.
